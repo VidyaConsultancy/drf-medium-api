@@ -13,7 +13,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=password
       - MYSQL_ROOT_HOST=%
-      - MYSQL_DATABASE=todos
+      - MYSQL_DATABASE=medium
     ports:
       - 3306:3306
 
@@ -32,7 +32,7 @@ services:
       - DJANGO_SECRET_KEY=secret_key
       - MYSQL_HOST=mysql
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=todos
+      - MYSQL_DATABASE=medium
       - REDIS_HOST=redis
     depends_on:
       - mysql
